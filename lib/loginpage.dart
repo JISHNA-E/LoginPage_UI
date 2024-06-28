@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/homepage.dart';
 
 class loginpage extends StatefulWidget {
   const loginpage({super.key});
@@ -56,7 +57,11 @@ class _loginpageState extends State<loginpage> {
           ),
           Column(
             children: [
-              ElevatedButton(onPressed: (){}, child: Text("login")),TextButton(onPressed: (){}, child: Text("signup"))
+              ElevatedButton(onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) {
+                  return homepage();
+                }));
+              }, child: Text("login")),TextButton(onPressed: (){}, child: Text("signup"))
             ],
           ),
           SizedBox(height: 50,)
