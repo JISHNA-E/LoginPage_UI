@@ -26,7 +26,7 @@ class _loginpageState extends State<loginpage> {
           setState(() {
            if (colors == Colors.pink)
            {
-            colors = Colors.orange;
+            colors = Colors.grey;
            }
            else{
             colors = Colors.pink;
