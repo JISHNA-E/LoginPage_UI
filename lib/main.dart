@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutterdemo/design.dart';
 import 'package:flutterdemo/flip.dart';
+import 'package:flutterdemo/list.dart';
+import 'package:flutterdemo/listpage.dart';
 import 'package:flutterdemo/loginpage.dart';
 
 import 'homepage.dart';
 
 void main() {
-  runApp(const Firstpage());
+  runApp( Firstpage());
 }
 
 class Firstpage extends StatelessWidget {
@@ -13,6 +16,6 @@ class Firstpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home:const loginpage(),);
+    return  MaterialApp(home:design(),);
   }
 }
